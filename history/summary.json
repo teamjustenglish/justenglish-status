@@ -112,19 +112,19 @@
     "url": "https://cliff.justenglish.lk",
     "icon": "https://icons.duckduckgo.com/ip3/cliff.justenglish.lk.ico",
     "slug": "cliff-program",
-    "status": "down",
-    "uptime": "99.15%",
-    "uptimeDay": "99.15%",
-    "uptimeWeek": "99.15%",
-    "uptimeMonth": "99.15%",
-    "uptimeYear": "99.15%",
-    "time": 878,
-    "timeDay": 878,
-    "timeWeek": 878,
-    "timeMonth": 878,
-    "timeYear": 878,
+    "status": "up",
+    "uptime": "51.80%",
+    "uptimeDay": "51.80%",
+    "uptimeWeek": "51.80%",
+    "uptimeMonth": "51.80%",
+    "uptimeYear": "51.80%",
+    "time": 1070,
+    "timeDay": 1070,
+    "timeWeek": 1070,
+    "timeMonth": 1070,
+    "timeYear": 1070,
     "dailyMinutesDown": {
-      "2026-09-15": 0
+      "2026-09-15": 14
     }
   },
   {
