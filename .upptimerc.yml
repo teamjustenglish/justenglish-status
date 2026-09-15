@@ -19,6 +19,14 @@ sites:
     url: https://cliff.justenglish.lk
   - name: Payments
     url: https://payments.justenglish.lk
+  - name: Careers Dashboard
+    url: https://careers.justenglish.lk/dash
+  - name: Stories Dashboard
+    url: https://stories.justenglish.lk/dashboard
+  - name: Payments - Upload
+    url: https://payments.justenglish.lk/upload
+  - name: Payments - Dashboard
+    url: https://payments.justenglish.lk/dash
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
