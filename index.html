@@ -399,7 +399,14 @@
       });
     });
 
-    sites.forEach(function (site) {
+    var statusPriority = { down: 0, degraded: 1, unknown: 2, up: 3 };
+    var sortedSites = sites.slice().sort(function (a, b) {
+      var pa = statusPriority[a.status] != null ? statusPriority[a.status] : 2;
+      var pb = statusPriority[b.status] != null ? statusPriority[b.status] : 2;
+      return pa - pb;
+    });
+
+    sortedSites.forEach(function (site) {
       var row = document.createElement("div");
       row.className = "component";
 
