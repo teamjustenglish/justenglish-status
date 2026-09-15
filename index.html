@@ -1,26 +1,352 @@
-<!DOCTYPE html> <html lang=en> <head> <meta charset=utf-8> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content=#333333 name=theme-color> <base href=/ > <link href=manifest.json rel=manifest crossorigin=use-credentials> <script>__SAPPER__={baseUrl:"",preloaded:[void 0,{}]};if('serviceWorker' in navigator)navigator.serviceWorker.register('/service-worker.js');(function(){try{eval("async function x(){}");var main="/client/client.478918ce.js"}catch(e){main="/client/legacy/client.23c78518.js"};var s=document.createElement("script");try{new Function("if(0)import('')")();s.src=main;s.type="module";s.crossOrigin="use-credentials";}catch(e){s.src="/client/shimport@2.0.5.js";s.setAttribute("data-main",main);}document.head.appendChild(s);}());</script> <link href=client/client-31a52aa5.css rel=stylesheet><link href=client/createOctokit-a85f76c7.css rel=stylesheet><link href=client/index-b0b6455a.css rel=stylesheet> <title>JustEnglish Status</title> <script>// If `prefers-color-scheme` is not supported, fall back to light mode.
-      // In this case, light.css will be downloaded with `highest` priority.
-      if (typeof window !== "undefined" && typeof document !== "undefined" && "matchMedia" in window && window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
-        document.documentElement.style.display = 'none';
-        document.head.insertAdjacentHTML(
-          'beforeend',
-          '<link rel="stylesheet" href={`${config.path}/themes/light.css`} onload="document.documentElement.style.display = \'\'">',
-        );
-      } </script> <link href=https://status.justenglish.lk/themes/light.css rel=stylesheet media=(prefers-color-scheme:light)> <link href=https://status.justenglish.lk/themes/dark.css rel=stylesheet media=(prefers-color-scheme:dark)><link href=https://status.justenglish.lk/global.css rel=stylesheet><link href=https://raw.githubusercontent.com/upptime/upptime/master/assets/upptime-icon.svg rel=icon type=image/svg><link href=/logo-192.png rel=icon type=image/png> <link href=/client/client.478918ce.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/client-31a52aa5.css rel=preload as=style><link href=/client/index.ab50b684.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/createOctokit.736db9f9.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/inject_styles.803b7e80.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/createOctokit-a85f76c7.css rel=preload as=style><link href=/client/index-b0b6455a.css rel=preload as=style></head> <body> <div id=sapper> <nav class=svelte-a08hsz><div class="svelte-a08hsz container"><div><a href=https://status.justenglish.lk class="svelte-a08hsz logo"><img alt="" class=svelte-a08hsz src=https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg> <div>JustEnglish Status</div></a></div> <ul class=svelte-a08hsz><li><a href=/ class=svelte-a08hsz target=_self aria-current=page>Status</a> <li><a href=https://github.com/teamjustenglish/justenglish-status class=svelte-a08hsz target=_self>GitHub</a> </li> </ul></div> </nav> <main class=container> <header class=svelte-ngkazm><h1><strong>JustEnglish Status</strong> — real-time uptime monitoring for all JustEnglish services.</h1> <p class="svelte-ngkazm lead">This status page uses <strong>real-time</strong> data from our <a href=https://github.com/teamjustenglish/justenglish-status>GitHub repository</a>. No server required — just GitHub Actions, Issues, and Pages.</header> <section class=svelte-8lnl4f><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <section class=svelte-8lnl4f><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <div class="svelte-fqsq6s f changed"><h2>Live Status</h2> <form class="svelte-fqsq6s f r"><div><input class=svelte-fqsq6s id=data_day name=d type=radio value=day><label class=svelte-fqsq6s for=data_day>24h</label></div> <div><input class=svelte-fqsq6s id=data_week name=d type=radio value=week checked><label class=svelte-fqsq6s for=data_week>7d</label></div> <div><input class=svelte-fqsq6s id=data_month name=d type=radio value=month><label class=svelte-fqsq6s for=data_month>30d</label></div> <div><input class=svelte-fqsq6s id=data_year name=d type=radio value=year><label class=svelte-fqsq6s for=data_year>1y</label></div> <div><input class=svelte-fqsq6s id=data_all name=d type=radio value=all><label class=svelte-fqsq6s for=data_all>all</label></div></form></div> <section class="svelte-fqsq6s live-status"><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <section><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <section><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div></section></main> <footer class=svelte-jbr799><p>This page is <a href=https://github.com/teamjustenglish/justenglish-status>open source</a>, powered by <a href=https://upptime.js.org>Upptime</a></p> </footer></div> <script> try {
-        if (typeof window !== "undefined" && window.navigator && navigator.serviceWorker) {
-          navigator.serviceWorker.getRegistrations().then(function (registrations) {
-            for (let registration of registrations) {
-              registration.unregister();
-            }
-          });
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JustEnglish Status</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><circle cx=%228%22 cy=%228%22 r=%228%22 fill=%22%233CB371%22/></svg>">
+<style>
+  :root {
+    --green: #3CB371;
+    --red: #DE350B;
+    --orange: #E66C09;
+    --yellow: #FFCC00;
+    --blue: #1B6AC9;
+    --bg: #FFFFFF;
+    --text: #000000;
+    --muted: #696F75;
+    --border: #E3E5E8;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  a { color: inherit; }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px 20px 12px;
+  }
+  .header .brand {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+  }
+  .header nav a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--muted);
+    margin-left: 16px;
+  }
+  .header nav a:hover { color: var(--text); }
+
+  .banner {
+    background: var(--green);
+    color: #fff;
+    text-align: center;
+    padding: 28px 20px;
+    transition: background 0.3s ease;
+  }
+  .banner.status-red { background: var(--red); }
+  .banner.status-orange { background: var(--orange); }
+  .banner.status-yellow { background: var(--yellow); color: #3a2f00; }
+  .banner h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .banner .stamp {
+    margin-top: 6px;
+    font-size: 13px;
+    opacity: 0.85;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 28px 20px 60px;
+  }
+
+  .section-caption {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+  .section-caption a { color: var(--muted); text-decoration: underline; }
+
+  .components {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .component {
+    padding: 16px 18px;
+    border-bottom: 1px solid var(--border);
+  }
+  .component:last-child { border-bottom: none; }
+  .component-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .component-name {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .component-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .status-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex: none;
+  }
+  .status-up .status-dot, .status-up.component-status { color: var(--green); }
+  .status-up .status-dot { background: var(--green); }
+  .status-down .status-dot, .status-down.component-status { color: var(--red); }
+  .status-down .status-dot { background: var(--red); }
+  .status-degraded .status-dot, .status-degraded.component-status { color: var(--yellow); }
+  .status-degraded .status-dot { background: var(--yellow); }
+  .status-unknown .status-dot, .status-unknown.component-status { color: var(--muted); }
+  .status-unknown .status-dot { background: var(--border); }
+
+  .bars {
+    display: flex;
+    gap: 2px;
+    margin-top: 12px;
+    height: 34px;
+    align-items: flex-end;
+  }
+  .bar {
+    flex: 1 1 0;
+    min-width: 2px;
+    height: 100%;
+    border-radius: 2px;
+    background: var(--border);
+    cursor: default;
+    position: relative;
+  }
+  .bar.up { background: var(--green); }
+  .bar.partial { background: var(--yellow); }
+  .bar.down { background: var(--red); }
+  .bar:hover::after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+    color: #fff;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 5;
+    pointer-events: none;
+  }
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 20px 20px 40px;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
+  .footer a { text-decoration: underline; }
+
+  .loading {
+    text-align: center;
+    color: var(--muted);
+    padding: 40px 0;
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    .component-name { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="brand">JustEnglish Status</div>
+    <nav>
+      <a href="https://github.com/teamjustenglish/justenglish-status">GitHub</a>
+    </nav>
+  </div>
+
+  <div class="banner" id="banner">
+    <h1 id="banner-text">Loading status&hellip;</h1>
+    <div class="stamp" id="banner-stamp"></div>
+  </div>
+
+  <div class="container">
+    <div class="section-caption">Uptime over the past 90 days.</div>
+    <div class="components" id="components">
+      <div class="loading">Fetching live data&hellip;</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="https://github.com/teamjustenglish/justenglish-status">Source</a> &middot;
+    Checked every 5 minutes
+  </div>
+
+<script>
+(function () {
+  var DATA_URL = "https://raw.githubusercontent.com/teamjustenglish/justenglish-status/master/history/summary.json";
+  var DAYS = 90;
+
+  function fmtDate(d) {
+    var y = d.getFullYear();
+    var m = String(d.getMonth() + 1).padStart(2, "0");
+    var day = String(d.getDate()).padStart(2, "0");
+    return y + "-" + m + "-" + day;
+  }
+
+  function niceDate(d) {
+    return d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+  }
+
+  function buildBars(site, firstTrackedDate) {
+    var wrap = document.createElement("div");
+    wrap.className = "bars";
+    var daily = site.dailyMinutesDown || {};
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    for (var i = DAYS - 1; i >= 0; i--) {
+      var d = new Date(today);
+      d.setDate(d.getDate() - i);
+      var key = fmtDate(d);
+      var bar = document.createElement("div");
+      bar.className = "bar";
+
+      if (firstTrackedDate && d < firstTrackedDate) {
+        bar.title = "";
+      } else {
+        var down = daily[key] || 0;
+        if (down <= 0) {
+          bar.classList.add("up");
+          bar.setAttribute("data-tip", niceDate(d) + " — no downtime");
+        } else if (down < 60) {
+          bar.classList.add("partial");
+          bar.setAttribute("data-tip", niceDate(d) + " — " + down + " min down");
+        } else {
+          bar.classList.add("down");
+          bar.setAttribute("data-tip", niceDate(d) + " — " + down + " min down");
         }
-        if (typeof window !== "undefined" && "caches" in window) {
-          caches.keys().then(function (keyList) {
-            return Promise.all(
-              keyList.map(function (key) {
-                return caches.delete(key);
-              })
-            );
-          });
-        }
-      } catch (error) {} </script> 
+      }
+      wrap.appendChild(bar);
+    }
+    return wrap;
+  }
+
+  function statusClass(status) {
+    if (status === "up") return "status-up";
+    if (status === "down") return "status-down";
+    if (status === "degraded") return "status-degraded";
+    return "status-unknown";
+  }
+
+  function statusLabel(status) {
+    if (status === "up") return "Operational";
+    if (status === "down") return "Down";
+    if (status === "degraded") return "Degraded";
+    return "Unknown";
+  }
+
+  function render(sites) {
+    var container = document.getElementById("components");
+    container.innerHTML = "";
+
+    var anyDown = sites.some(function (s) { return s.status === "down"; });
+    var anyDegraded = sites.some(function (s) { return s.status === "degraded"; });
+
+    var banner = document.getElementById("banner");
+    var bannerText = document.getElementById("banner-text");
+    banner.classList.remove("status-red", "status-orange", "status-yellow");
+    if (anyDown) {
+      banner.classList.add("status-red");
+      bannerText.textContent = "Some systems are experiencing issues";
+    } else if (anyDegraded) {
+      banner.classList.add("status-yellow");
+      bannerText.textContent = "Some systems are degraded";
+    } else {
+      bannerText.textContent = "All systems are operational";
+    }
+    document.getElementById("banner-stamp").textContent =
+      "Last checked " + new Date().toLocaleString();
+
+    // Repo went live 2026-09-15; bars before that date are blank (no data)
+    var firstTrackedDate = new Date(2026, 8, 15);
+    firstTrackedDate.setHours(0, 0, 0, 0);
+
+    sites.forEach(function (site) {
+      var row = document.createElement("div");
+      row.className = "component";
+
+      var top = document.createElement("div");
+      top.className = "component-row";
+
+      var name = document.createElement("div");
+      name.className = "component-name";
+      name.textContent = site.name;
+
+      var status = document.createElement("div");
+      status.className = "component-status " + statusClass(site.status);
+      var dot = document.createElement("span");
+      dot.className = "status-dot";
+      status.appendChild(dot);
+      status.appendChild(document.createTextNode(statusLabel(site.status)));
+
+      top.appendChild(name);
+      top.appendChild(status);
+      row.appendChild(top);
+      row.appendChild(buildBars(site, firstTrackedDate));
+
+      var meta = document.createElement("div");
+      meta.className = "meta-row";
+      meta.innerHTML =
+        "<span>" + (site.uptimeYear || site.uptime || "100.00%") + " uptime (1y)</span>" +
+        "<span>" + (site.time != null ? site.time + " ms" : "") + "</span>";
+      row.appendChild(meta);
+
+      container.appendChild(row);
+    });
+  }
+
+  fetch(DATA_URL, { cache: "no-store" })
+    .then(function (res) { return res.json(); })
+    .then(render)
+    .catch(function () {
+      document.getElementById("components").innerHTML =
+        '<div class="loading">Could not load status data. <a href="https://github.com/teamjustenglish/justenglish-status">View on GitHub</a>.</div>';
+    });
+})();
+</script>
+
+</body>
+</html>
