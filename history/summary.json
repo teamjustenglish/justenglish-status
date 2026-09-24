@@ -4,19 +4,20 @@
     "url": "https://justenglish.lk",
     "icon": "https://icons.duckduckgo.com/ip3/justenglish.lk.ico",
     "slug": "just-english-website",
-    "status": "up",
-    "uptime": "97.54%",
-    "uptimeDay": "100.00%",
+    "status": "down",
+    "uptime": "97.67%",
+    "uptimeDay": "99.98%",
     "uptimeWeek": "96.95%",
-    "uptimeMonth": "97.54%",
-    "uptimeYear": "97.54%",
-    "time": 3008,
-    "timeDay": 1940,
-    "timeWeek": 3690,
-    "timeMonth": 3008,
-    "timeYear": 3008,
+    "uptimeMonth": "97.67%",
+    "uptimeYear": "97.67%",
+    "time": 6322,
+    "timeDay": 25672,
+    "timeWeek": 8262,
+    "timeMonth": 6322,
+    "timeYear": 6322,
     "dailyMinutesDown": {
-      "2026-09-21": 307
+      "2026-09-21": 307,
+      "2026-09-24": 0
     }
   },
   {
