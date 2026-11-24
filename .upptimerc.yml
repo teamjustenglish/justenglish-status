@@ -15,8 +15,6 @@ sites:
     url: https://missioncontrol.justenglish.lk
   - name: Level Test
     url: https://level.justenglish.lk
-  - name: Cliff Program
-    url: https://cliff.justenglish.lk
   - name: Payments
     url: https://payments.justenglish.lk
   - name: Careers Dashboard
